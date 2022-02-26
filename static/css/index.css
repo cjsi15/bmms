@@ -1,0 +1,128 @@
+body{
+	background-color:teal;
+}
+.title{
+	margin-top:25px;
+	text-align:center;
+	color:ivory;
+
+	
+}
+.sub{
+	margin-top:0px;
+	margin-left:200px;
+	color:ivory;
+	font-family:courier new;
+}
+.btn{
+	margin-top:10px;
+	margin-left:35px;
+	margin-bottom:25px;
+	
+}
+.small{
+}
+.container{
+	background-color:teal;
+	margin-top:5px;
+	border-radius:9px;
+	
+}
+.form{
+	display:none;
+	border-radius:9px;
+	background-color:gray;
+	margin:7px;
+	width:70%;
+	line-height:25px;
+	text-align:left
+	
+}
+.b{
+	color:blue;
+	font-size:16px;
+	justify-text:center;
+}
+.stat{
+	color:black;
+}
+.wrate{
+	width:auto;
+	margin:auto;
+}
+#blood{
+	font-size:15px;
+	margin-top:15px;
+}
+#color{
+	font-size:15px;
+	margin-top:15px;
+}
+#farm{
+	font-size:12px;
+	margin-top:15px;
+	width:85px;
+	color:ivory;
+	background-color:rgb(112,128,144);
+}
+.wins{
+	width:100px;
+	margin-right:90px;
+	border-radius:9px;
+	border-style:ridged;
+	border-color:teal;
+	background-color:limegreen;
+}
+::placeholder{
+	font-size:16px;
+	margin-left:35px;
+	
+}
+.user{
+	margin-left:35px;
+	width:65%;
+	background-color:ivory;
+	
+}
+.pass{
+	margin-left:35px;
+	width:65%;
+	background-color:ivory;
+	
+}
+label{
+	margin-left:35px;
+	margin-top:25px;
+}
+hr{
+	width:75%;
+	margin-top:0px;
+	height:12px;
+	background-color:white;
+	
+}
+.borrow{
+	color:orange;
+}
+.issue{
+	color:skyblue;
+}
+.return{
+	color:limegreen;
+}
+.col-sm-4{
+	font-family:courier new;
+	display:none;
+}
+.intro{
+	font-family:helvitica;
+}
+.dropdown-menu{
+	font-family:courier new;
+	display:none;
+}
+.table{
+	font-family:courier new;
+	display:none;
+}
+

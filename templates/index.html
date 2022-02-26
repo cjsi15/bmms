@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!--Required meta tags-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title >DG Design Materials Management System</title>
+<!-- Bootstrap minified -->
+<link type="text/css" rel="stylesheet" href="/static/css/bootstrap.min.css">
+<!--Bootstrap grid-->
+<link type="text/css" rel="stylesheet" href="/static/css/bootstrap-grid.min.css">
+<link type="text/css" rel="stylesheet" href="/static/css/index.css">
+<script src="/static/js/bootstrap.bundle.js" ></script>
+ <script src="/static/js/jquery.min.js" ></script>
+<script src="/static/js/effects.js" ></script>
+</head>
+
+<body >
+<h1 class="title">DG Design Materials </h1>
+<h4 class="sub">Management System <small class="small">v1.0</small></h4>
+<hr>
+<button type="button" class="btn btn-secondary">Log In</button>
+<p style="margin-left:12px;font-family:courier new;" class="lead">{{info}}</p>
+<div class="container">
+<form class="form" action="/" method='post' >
+<div class="form-group">
+    <label for="exampleInputEmail1">Username</label>
+    <input name='email' type="text" class="form-control user" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="User  Id">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input name='pass' type="password" class="form-control pass" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+</body>
+
+</html>
