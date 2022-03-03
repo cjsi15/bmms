@@ -64,7 +64,7 @@
                    </ul>
              </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">RECEIVING DELIVERY</a>
+              <a class="nav-link addstocks" aria-current="page" href="#">RECEIVING DELIVERY</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">PULL OUT</a>
@@ -82,9 +82,9 @@
           
         </div>
       </div>
-      <div class="bg-light p-5 rounded">
+      <div class="bg-light p-5 rounded borrowee">
       		<div class="row">
-      		<div class="col-sm-4">
+      		<div class="col-sm-4 ">
       		<h5 style="color:teal">Borrower's Log</h5>
       		<form>
      		     <div class="row">
@@ -139,13 +139,75 @@
     </div>
   </div>
 </main>
-
-
+ <!--add stocks-->
+   <div class="bg-secondary p-5 rounded">
+      		<div class="row">
+      		<div class="col-sm-4 formstock">
+      		<h5 style="color:ivory">Add Stocks</h5>
+      		<form>
+     		     <div class="row">
+     		          <div  class="row">
+     		             <input type="text" class="form-control" placeholder="Product Name">
+     		        </div>
+     		          <div style="margin-top:9px;" class="row">
+     		             <input type="text" class="form-control" placeholder="Location">
+     		        </div>
+     		        <div style="margin-top:9px;" class="row">
+     		              <input type="text" class="form-control" placeholder="Remarks">
+     		         </div>
+     		      <div style="margin-top:9px;" class="row">
+     		          <input style="width:45%" type="text" class="form-control" placeholder="Qty">
+     		       </div>
+     		      </div>
+     		      <div style="margin-top:9px;" class="col">
+     		      <button style="margin-top:12px;margin-left:7px;" type="submit" class="btn btn-warning" >Next Item</button>
+     		        </div>
+     		       </div>
+     		  </form>    		
+      		</div>
+      		<div class="col-sm-8 form-table">
+      		  <table style="margin-top:12px;" class="table table-hover table-sm">
+      		  		 <caption>
+      		      		    <p class="lead">c/o: Richard Mendez </p>
+      		        </caption>
+      		      		  <thead>
+      		      		    <tr>
+      		      		      <th scope="col">Item code</th>
+      		      		      <th scope="col">Name</th>
+      		      		      <th scope="col">Quantity</th>
+      		      		      <th scope="col">Remarks</th>
+      		      		    </tr>
+      		      		  </thead>
+      		      		  <tbody>
+      		      		    <tr>
+      		      		      <th scope="row">1</th>
+      		      		      <td>Tape</td>
+      		      		      <td>12</td>
+      		      		      <td>good</td>
+      		      		    </tr>
+      		      		    <tr>
+      		      		      <th scope="row">2</th>
+      		      		      <td>pen</td>
+      		      		      <td>6</td>
+      		      		      <td>good</td>
+      		      		    </tr>
+      		      		    <tr>
+      		      		      <th scope="row">3</th>
+      		      		      <td colspan="1">meter</td>
+      		      		      <td>12</td>
+      		      		      <td>Good</td>
+      		      		    </tr>
+      		      		  </tbody>
+      		      		  
+      		      		</table>    		
+      	     </div>
+      		</div>              
+      </div>
+    </div>
+  </div>
+<!--addstock-->
     <script src="/static/js/bootstrap.bundle.min.js"></script>
 
       
   </body>
 </html>
-<div class="col-sm-4 mx-auto">
-                
-              </div>     

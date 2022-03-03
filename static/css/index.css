@@ -1,5 +1,5 @@
 body{
-	background-color:teal;
+	background-color:royalblue;
 }
 .title{
 	margin-top:25px;
@@ -42,36 +42,6 @@ body{
 	color:blue;
 	font-size:16px;
 	justify-text:center;
-}
-.stat{
-	color:black;
-}
-.wrate{
-	width:auto;
-	margin:auto;
-}
-#blood{
-	font-size:15px;
-	margin-top:15px;
-}
-#color{
-	font-size:15px;
-	margin-top:15px;
-}
-#farm{
-	font-size:12px;
-	margin-top:15px;
-	width:85px;
-	color:ivory;
-	background-color:rgb(112,128,144);
-}
-.wins{
-	width:100px;
-	margin-right:90px;
-	border-radius:9px;
-	border-style:ridged;
-	border-color:teal;
-	background-color:limegreen;
 }
 ::placeholder{
 	font-size:16px;
@@ -125,4 +95,19 @@ hr{
 	font-family:courier new;
 	display:none;
 }
-
+.bg-secondary{
+	background-color:green;
+	display:none;
+}
+.addstocks{
+	color:darkorange;
+}
+.formstock{
+	border:none;
+}
+.form-table{
+	border:none;
+}
+.borrowee{
+	border:none;
+}
