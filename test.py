@@ -1,4 +1,5 @@
 from methods import Stocks
+unique_id=[]
 itemcode=123
 name='handrill'
 qty=12

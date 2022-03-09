@@ -1,5 +1,5 @@
 body{
-	background-color:royalblue;
+	background-color:white;
 }
 .title{
 	margin-top:25px;
@@ -95,7 +95,7 @@ hr{
 	font-family:courier new;
 	display:none;
 }
-.bg-secondary{
+.bg-success{
 	background-color:green;
 	display:none;
 }
@@ -107,7 +107,11 @@ hr{
 }
 .form-table{
 	border:none;
+	display:none;
 }
 .borrowee{
 	border:none;
+}
+.col-sm-8{
+	font-family:courier new;
 }
