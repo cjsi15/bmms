@@ -50,11 +50,12 @@
         <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
           <ul class="navbar-nav">
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="dropdown10" data-bs-toggle="dropdown" aria-expanded="false">TOOLROOM</a>
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown10" data-bs-toggle="dropdown" aria-expanded="false">STORAGE ROOM</a>
                  <ul class="dropdown-menu" aria-labelledby="dropdown10">
                           <li><a class="dropdown-item borrow" href="#">BORROW </a></li>
                           <li><a class="dropdown-item issue" href="#">ISSUANCE </a></li>
                           <li><a class="dropdown-item return" href="#">RETURN </a></li>
+                          <li><a class="dropdown-item pullout" href="#">PULL-OUT </a></li>
                           <li>
                           <input style="margin-left:12px;border-radius:9px;border-type:ridged;color:gray;" placeholder="Item code" type="search" ></input>
                           </li>
@@ -63,12 +64,6 @@
 						</li>
                    </ul>
              </li>
-            <li class="nav-item">
-              <a class="nav-link addstocks" aria-current="page" href="#">RECEIVING DELIVERY</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">PULL OUT</a>
-            </li>
           </ul>
         </div>
       </div>
@@ -85,18 +80,27 @@
       <div class="bg-light p-5 rounded borrowee">
       		<div class="row">
       		<div class="col-sm-4 ">
-      		<h5 style="color:teal">Borrower's Log</h5>
+      		<h5 style="color:teal">Borrow Item/s</h5>
       		<form>
      		     <div class="row">
      		        <div class="col">
-     		             <input type="text" class="form-control" placeholder="Item code">
+     		             <input id="i_code" name="item_code" type="text" class="form-control" placeholder="Itemcode">
      		        </div>
      		      <div class="col">
-     		          <input style="width:45%" type="text" class="form-control" placeholder="Qty">
+     		          <input id="i_qty" name="quantity" style="width:45%" type="text" class="form-control" placeholder="Qty">
      		       </div>
+     		       <div class="row">
+     		           <input id="i_name" style="margin-top:9px;margin-left:10px;" name="item_name" type="text" class="form-control" placeholder="Item Name">
+     		         </div>
+     		         <div class="row">
+     		             <input id="i_status" style="margin-top:9px;margin-left:10px;" name="remarks" type="text" class="form-control" placeholder="Status">
+     		          </div>
      		      </div>
-     		    <button style="margin-top:12px;margin-left:7px;" type="submit" class="btn btn-secondary" >Next Item</button>
-     		  </form>    		
+     		    <div class="row">
+     		     <button onclick="myfunc()" style="margin-top:12px;margin-left:10px;width:37%" type="button" class="btn btn-secondary" >Next >></button>
+				</div>
+     		  </form> 
+     		  <p id="rep" > </p>   		
       		</div>
       		<div class="col-sm-8 table">
       		  <table style="margin-top:12px;" class="table table-hover table-sm">
@@ -138,81 +142,28 @@
       </div>
     </div>
   </div>
-   <!--add stocks-->
-   <div>
-         <div class="bg-light p-5 rounded formstock">
-         		<div class="row">
-         		<div class="col-sm-4 ">
-         		<h5 style="color:teal">Add Inventory</h5>
-         		<form>
-        		     <div class="row">
-        		        <div class="col">
-        		             <input type="text" class="form-control" placeholder="Item code">
-        		        </div>
-        		      <div class="col">
-        		          <input style="width:45%" type="text" class="form-control" placeholder="Qty">
-        		       </div>
-        		       <div style="margin-top:7px;margin-left:2px;" class="row">
-        		             <input type="text" class="form-control" placeholder="Item Name">
-        		          </div>
-        		        <div style="margin-top:7px;margin-left:2px;" class="row">
-        		           <input type="text" class="form-control" placeholder="Location">
-        		          </div>
-        		   		<div style="margin-top:7px;margin-left:2px;" class="row">
-        		           <input type="text" class="form-control" placeholder="Remarks">
-        		         </div>
-        		         <div class="col">
-        		      <button style="margin-top:12px;" type="submit" class="btn btn-secondary" >Next Item</button>
-					</div>
-  					</div>
-        		  </form>    		
-         		</div>
-         		<div class="col-sm-8 table">
-         		  <table style="margin-top:12px;" class="table table-hover table-sm">
-         		  		 <caption>
-         		      		    <p class="lead">c/o: Richard Mendez </p>
-         		        </caption>
-         		      		  <thead>
-         		      		    <tr>
-         		      		      <th scope="col">Item code</th>
-         		      		      <th scope="col">Name</th>
-         		      		      <th scope="col">Quantity</th>
-         		      		      <th scope="col">Remarks</th>
-         		      		    </tr>
-         		      		  </thead>
-         		      		  <tbody>
-         		      		    <tr>
-         		      		      <th scope="row">1</th>
-         		      		      <td>Tape</td>
-         		      		      <td>12</td>
-         		      		      <td>good</td>
-         		      		    </tr>
-         		      		    <tr>
-         		      		      <th scope="row">2</th>
-         		      		      <td>pen</td>
-         		      		      <td>6</td>
-         		      		      <td>good</td>
-         		      		    </tr>
-         		      		    <tr>
-         		      		      <th scope="row">3</th>
-         		      		      <td colspan="1">meter</td>
-         		      		      <td>12</td>
-         		      		      <td>Good</td>
-         		      		    </tr>
-         		      		  </tbody>
-         		      		  
-         		      		</table>    		
-         	     </div>
-         		</div>              
-         </div>
-       </div>
-     </div>
-   
-  <!--addstock-->
-
+  
 </main>
     <script src="/static/js/bootstrap.bundle.min.js"></script>
+<script>
+var data=[]
 
+itemcode=document.getElementById("i_code").val();
+qty=document.getElementById("i_qty").val();
+name=document.getElementById("i_name").val();
+status=document.getElementById("i_status").val();
+
+function myfunc(itemcode,qty,name,status){
+  		
+  		data.push(itemcode);
+  		data.push(qty);
+  		data.push(name);
+  		data.push(status);
+  		return data
+  };
+document.getElementById("rep")=data;
+    		
+</script>
       
   </body>
 </html>

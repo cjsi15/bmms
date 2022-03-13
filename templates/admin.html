@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>DG Design Materials Mngmt System Hompage  v.1</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/navbars/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="/static/css/bootstrap.min.css" rel="stylesheet">
+<link href="/static/css/index.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="/static/css/navbar.css" rel="stylesheet">
+     <script src="/static/js/jquery.min.js" ></script>
+      <script src="/static/js/pops.js" ></script>
+ <script src="/static/js/bootstrap.bundle.min.js"></script>
+
+  </head>
+  <body>
+    
+<main>
+    <nav class="navbar navbar-expand-lg navbar-light bg-info rounded" aria-label="Twelfth navbar example">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample10" aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
+          <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown10" data-bs-toggle="dropdown" aria-expanded="false">STORAGE ROOM</a>
+                 <ul class="dropdown-menu" aria-labelledby="dropdown10">
+                          <li><a class="dropdown-item borrow" href="#">BORROW </a></li>
+                          <li><a class="dropdown-item issue" href="#">ISSUANCE </a></li>
+                          <li><a class="dropdown-item return" href="#">RETURN </a></li>
+                          <li><a class="dropdown-item pullout" href="#">PULL-OUT </a></li>
+                          <li>
+                          <input style="margin-left:12px;border-radius:9px;border-type:ridged;color:gray;" placeholder="Item code" type="search" ></input>
+                          </li>
+						<li>
+						<button style="margin-top:7px;margin-left:12px;" class="btn btn-primary " type="submit" >SEARCH </button>
+						</li>
+                   </ul>
+             </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+<div class="container">
+<div  class="jumbotron">
+<input  name="read" type="text" id="i_code" placeholder="enter something!">
+
+<button type="button" onclick="myfunct()"  >Next >></button>
+</div>
+</div>
+<div id="myid" >
+</div>
+<script>
+var data=["Hello"];
+  function myfunct() {
+  	const val = document.querySelector('input');
+  	 data.push(val);
+    document.getElementById("myid").innerHTML=data;
+  };
+   		
+</script>
+      
+  </body>
+</html>
